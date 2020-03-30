@@ -1,0 +1,27 @@
+<!-- served as default, will eventually show up at the root of website -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/weather.png">
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script> <!-- reallocate from head so that order of index is correctly , which means the app.js will not occur before everything else is rendered- so that in app.js the event will run->
+</body>
+
+</head>
+
+</html>
